@@ -1,0 +1,858 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Future PT';
+    src: url(../Font/futura-pt/FuturaPT-Light.ttf);
+    font-family: 'Future bold';
+    src: url(../Font/futura-pt/FuturaPT-Bold.ttf);
+}
+
+
+header{
+    background: #F9F8F8;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .topmenu{
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 50px 10px 0;
+    font-family: 'Future PT';
+}
+
+header .topmenu a,
+header .topmenu li{
+    font-weight: 800;
+    color: black;
+}
+
+header .topmenu>a{
+    padding: 10px 0 ;
+    position: relative;
+    width: 25%;
+}
+
+header .topmenu>a:before {
+    content: "";
+    display: block;
+    background: url("../img/house\ icon.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -20px;
+    top: 12px;
+}
+
+header .topmenu .linker1{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+}
+
+header .topmenu .linker1 li:first-child {
+    position: relative;
+    list-style: none;
+}
+
+header .topmenu .linker1 li:first-child a::before{
+    content: " ";
+    display: block;
+    background: url(../img/phone\ icon.svg) no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -20px;
+    top: 3px;
+}
+
+header .topmenu .linker1 li:nth-child(2),
+header .topmenu .linker1 li:nth-child(3){
+    list-style: none;
+}
+
+header .topmenu .linker1 li:nth-child(2) a::before,
+header .topmenu .linker1 li:nth-child(3) a::before{
+    content: "\2022";
+    color: #FFBD54;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em; 
+}
+
+header .topmenu .linker2 {
+    width: 27%;
+    justify-content: space-between;
+    display: flex;
+    list-style: none;
+}
+
+.linker1 li a:hover{
+    color: #FFBD54;
+    transition: 0.3s;
+}
+
+.linker1 li a:active{
+    color: #333333;
+}
+
+header .topmenu .linker2 li:first-child a{
+    position: relative;
+    list-style: none;
+}
+
+header .topmenu .linker2 li:first-child a:before{
+    content: " ";
+    background: url(../img/Calendar.png) no-repeat;
+    position: absolute;
+    left: -25px;
+    width: 20px;
+    height: 20px;
+    top: 3px;
+}
+
+.container{
+    width: 1140px;
+    margin: auto;
+}
+
+.navbar{
+    width: 100%;
+    background: 1px solid #F3F3F3;
+    background: #FFFFFF;
+}
+
+.navbar .container {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .container>a:first-child{
+    position: absolute;
+}
+
+.navbar .container>a:first-child:hover{
+    opacity: 0.9;
+}
+
+.navbar .container>a:first-child:active{
+    opacity: 0.6;
+}
+
+.navbar .container p{
+    width: 16%;
+}
+
+.navbar .container ul{
+    display: flex;
+    list-style: none;
+    position: relative;
+}
+
+.navbar .container ul::before{
+    content: " ";
+    background: url(../img/Fish.svg) no-repeat;
+    width: 25px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    top: 23px;
+}
+
+.navbar .container ul li a{
+    display: inline-block ;
+    margin: 20px 20px;
+    color: black;
+    font-family: 'Future Pt';
+    font-weight: 800;
+    border: solid transparent;
+}
+
+.navbar .container .quest{
+    font-weight: 500;
+    color: black;
+    position: relative;
+    padding: 10px 20px;
+}
+
+.navbar .container .quest::before{
+    content: " ";
+    display: block;
+    background: url("../img/pet.svg") no-repeat;
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    left: -17px;
+}
+
+.navbar .container ul li a:hover{
+    border-bottom: solid #FFBD54;
+    transition: 0.3s;
+}
+
+.navbar .container ul li a:active{
+    opacity: 0.7;
+}
+
+.about{
+    width: 100%;
+    background-color: #F9F8F8;
+}
+
+.bg{
+    background: url(../img/bg@2x.png) no-repeat;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.about .bg .img{
+    background: url(../img/img.png) no-repeat;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.about .bg .img .container .left{
+    width: 55%;
+    margin-left: auto;
+    font-family: 'Future bold';
+    padding-bottom: 300px;
+}
+
+.about .bg .img .container .left h1{
+    font-size: 65px ;
+    line-height: 60px;
+    color: #333333;
+    padding: 250px 0 30px 0;
+}
+
+.text-primary{
+    color: #78C0DE;
+}
+
+.about .bg .img .container .left p{
+    font-family: 'Future PT';
+    font-size: 16px;
+    line-height: 21px;
+    color: #949494;
+    margin-bottom: 50px;
+}
+
+.about .bg .img .container .left .btn{
+    margin-bottom: 300px ;
+}
+
+.btn{
+    padding: 15px 48px;
+    border-radius: 3px;
+    background: #333333;
+    color: white;
+}
+
+.btn:hover{
+    background: #FFBD54;
+    color: #333333;
+    transition: 0.3s;
+}
+
+.btn:active{
+    opacity: 0.7;
+}
+
+.line{
+    margin: auto;
+    width: 200px;
+    border:1px solid #DBDBDB;
+}
+
+.quote{
+    text-align: center;
+    padding: 0 15%;
+}
+
+.quote p::before{
+    content: " “ ";
+    color: #949494;
+    position: absolute;
+    font-size: 100px;
+    left: -100px;
+    top: 50px;
+    font-family: 'Gaegu', cursive;
+}
+
+.quote p::after{
+    content: " “ ";
+    color: #949494;
+    position: absolute;
+    font-size: 100px;
+    right: -50px;
+    bottom: 30px;
+    transform: rotate(180deg);
+    font-family: 'Gaegu', cursive;
+}
+
+.quote p{
+    position: relative;
+    padding: 50px 0;
+    color: #949494;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: 'Future PT';
+}
+
+.subtitle{
+    color: #333333;
+    font-size: 20px;
+    padding: 30px 0;
+}
+
+.service{
+    width: 100%;
+}
+
+.service .container .btn_left{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    left: -100px;
+    top: 160px;
+}
+
+.service .container .btn_right{
+    position: absolute;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    right: -100px;
+    top: 160px;
+}
+
+.btn_left:hover,
+.btn_right:hover{
+    background-color: white ;
+    transition: 0.3s;
+}
+
+.btn_left:active,
+.btn_right:active{
+    opacity: 0.7;
+}
+
+.cards{
+    padding: 80px 0 40px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+.card{
+    width: 15%;
+    text-align: center;
+    padding: 30px;
+    border-radius: 5px;
+    background: #FFFFFF;
+}
+
+.cards .card:hover{
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.cards .card:active{
+    opacity: 0.3;
+}
+
+.cards .card img{
+    margin-bottom: 10px;
+}
+
+.cards .card p{
+    font-size: 18px;
+    color: #333333;
+    font-weight: 800;
+}
+
+.container .about_us{
+    width: 100%;
+    padding: 40px 35px;
+    background-color: #FFFFFF;
+    display: flex;
+}
+
+.container .about_us img{
+    width: 40%;
+}
+
+.container .about_us .about_subtitle{
+    width: 60%;
+    padding: 0 50px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Future PT';
+}
+
+.container .about_us .about_subtitle h2{
+    font-size: 36px;
+    color: #333333;
+}
+
+.container .about_us .about_subtitle p{
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+}
+
+.container .about_us .about_subtitle p:nth-of-type(2){
+    margin-top: 20px;
+}
+
+.container .about_us .about_subtitle .linkers{
+    width: 95%;
+    margin-right: auto;
+    padding: 30px 0;
+}
+
+.btn_light{
+    font-family: 'Future PT';
+    padding: 16px 36px 16px 60px;
+    background: #FFBD54;
+    border-radius: 3px;
+    color: white;
+    margin-right: auto;
+    position: relative;
+}
+
+.container .about_us .about_subtitle .linkers .btn_light::before{
+    content: " ";
+    background: url(../img/money.svg) no-repeat;
+    left: 31px;
+    top: 14px;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+}
+
+.btn_light:hover{
+    background: #333333;
+    color: white;
+    transition: 0.3s;
+}
+
+.btn_light:active{
+    opacity: 0.5;
+}
+
+.container .about_us .about_subtitle .linkers .btn{
+    padding: 16px 36px 16px 60px;
+    margin-left: 15px;
+    position: relative;
+}
+
+.container .about_us .about_subtitle .linkers .btn::before{
+    content: " ";
+    background: url(../img/document.svg);
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 13px;
+    left: 33px;
+}
+
+.bottom_about{
+    padding-bottom: 200px;
+    background: none;
+}
+
+.email{
+    width: 100%;
+    height: 300px;
+    background: url(../img/Mask\ Group.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.email .container2{
+    width: 1200px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.email .container2 h1{
+    font-size: 48px;
+    color: white;
+    font-family: 'Future bold'; 
+}
+
+.email .container2 img{
+    right: 0;
+    top: -116px;
+    position: absolute;
+}
+
+.email .container2 .subtitle_email{
+    width: 50%;
+    margin-left: 100px;
+    margin-right: auto;
+}
+
+input::placeholder{
+    color: #949494;
+}
+
+.email .container2 .subtitle_email input{
+    width: 55%;
+    margin: 20px 0;
+    padding: 15px;
+    color: black;
+    font-weight: 500;
+    border-radius: 3px;
+    border: none;
+    height: 48px;
+    /* outline: none; */
+}
+
+.email .container2 .subtitle_email input:focus{
+    outline: 2px solid #FFBD54;
+    border-radius:3px ;
+}
+
+.low{
+    width: 100%;
+    padding: 250px 0;
+    background: #F9F8F8;
+}
+
+.low .bg .container>h1{
+    text-align: center;
+    font-size: 48px;
+    color: #333333;
+    font-family: 'Future PT';   
+}
+
+.low .bg>.container:first-child{
+    width: 100%;
+}
+
+.low .bg  .container .cards_lows{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.low .bg  .container .cards_lows .box{
+    width: 250px;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E2;
+    border-radius: 5px;
+} 
+
+.low .bg  .container .cards_lows .box img{
+    width: 100%;
+}
+
+.low .bg  .container .cards_lows .box:hover{
+    box-shadow: 3px 7px 10px #DBDBDB;
+}
+
+.low .bg  .container .cards_lows .box:active{
+    box-shadow: 0px 3px 2px #DBDBDB;
+}
+
+.low .bg  .container .cards_lows .box .subtitle_box{
+    padding: 15px 25px;
+}
+
+.low .bg  .container .cards_lows .box .subtitle_box p:first-child{
+    text-align: end;
+    font-size: 14px;
+    color: #949494;
+}
+
+.low .bg  .container .cards_lows .box .subtitle_box h2{
+    font-size: 22px;
+    color: #333333;
+    font-family: 'Future PT';
+}
+
+.low .bg  .container .cards_lows .box .subtitle_box p:nth-of-type(2){
+    margin-top: 10px;
+    margin-bottom: 35px;
+    color: #949494;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.cat_btn{
+    padding: 15px 36px 15px 40px;
+    color: #333333;
+    font-weight: 700;
+    position: relative;
+}
+
+.cat_btn::before{
+    content: " ";
+    display: block;
+    background: url("../img/pet.svg") no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 8px;
+    top: 11px;
+}
+
+.low .bg  .container .cards_lows  .box1{
+    width: 40%;
+    display: flex;
+    border: 1px solid #E4E4E2;
+    border-radius: 5px;
+    background: #FFFFFF;
+}
+
+.low .bg  .container .cards_lows  .box1 img{
+    width: 250px;
+}
+
+.low .bg  .container .cards_lows  .box1 .text{
+    width: 335px;
+    padding: 15px 25px;
+}
+
+.low .bg  .container .cards_lows  .box1 .text .hashtag{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.low .bg .container .cards_lows .box1 .text .top{
+    display: flex;
+    color: #3D9CEA;
+    margin-bottom: 35px;
+}
+
+.low .bg .container .cards_lows .box1 .text .top>p:last-child{
+    width: 40%;
+    color: #949494;
+    font-weight: 700;
+    text-align: end;
+}   
+
+.low .bg .container .cards_lows .box1 .text h2{
+    color: #333333;
+    font-size: 26px;
+}
+
+.low .bg .container .cards_lows .box1 .text>p{
+    color: #949494;
+    font-family: 'Future PT';
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 100;
+    margin-bottom: 50px;
+}
+
+.low .bg  .container .cards_lows .box1:hover{
+    box-shadow: 3px 7px 10px #DBDBDB;
+}
+
+.low .bg  .container .cards_lows .box1:active{
+    box-shadow: 0px 3px 2px #DBDBDB;
+}
+
+.map{
+    background: rgb(75, 74, 74);
+    height: 500px;
+    width: 100%;
+}
+
+.map .bg{
+    display: flex;
+    width: 100%;
+}
+
+.map .bg iframe{
+    Width:40%;
+    height: 500px;
+}
+
+.map .bg .text_area{
+    width: 60%;
+    margin-left: 100px;
+    background: url(../img/background\ map.png) no-repeat;
+    background-position: center;
+}
+
+.map .bg .text_area{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.map .bg .text_area .label{
+    width: 100%;
+    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.map .bg .text_area h1{
+    color: #FFFFFF;
+    font-size: 48px;
+}
+
+.map .bg .text_area p{
+    color: #949494;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+.map .bg .text_area input{
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    font-size: 17px ;
+    background-color: white;
+    outline: none;
+    border: none;
+}
+
+.map .bg .text_area input{
+    margin-bottom: 30px;
+}
+.map .bg .text_area .input{
+    width: 100%;
+    background: #FFFFFF;
+    padding: 15px;
+}
+
+.map .bg .text_area .input label{
+    width: 100%;
+    font-size: 16px;
+    background-color: white ;
+    border: transparent;
+}
+
+.map .bg .text_area .input input{
+    outline: none;
+    width: 100%;
+    height: 70px;
+    background-color: none;
+    padding: 0;
+}
+
+footer .bg{
+    width: 100%;
+    height: 200px;
+}
+
+footer .container2{
+    width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    background: #E4E4E2;
+    justify-content: space-between;
+
+}
+
+footer .bottom_footer{
+    background: #E4E4E2;
+}
+
+footer .container2 .box ul{
+    list-style: none;
+    line-height: 1.6;
+}
+
+footer a,
+footer .container2 .box ul li{
+    color: black;
+    font-weight: 500;
+    font-family: 'Future PT';
+}
+
+footer .container2 .box ul li a:hover{
+    color: #FFBD54;
+    transition: 0.3s;
+}
+
+footer .container2 .box ul li a:active{
+    color: black;
+    opacity: 0.7;
+}
+
+footer .bottom_footer p{
+    text-align: end;
+    width: 1200px;
+    margin: auto;
+}
+
+footer .container2 .box:nth-child(4) li:first-child,
+footer .container2 .box:nth-child(6) li:first-child{
+    position: relative;
+}
+
+footer .container2 .box:nth-child(4) li:first-child::before{
+    content: " ";
+    background: url(../img/Calendar.png) no-repeat;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 6px;
+    left: -20px;
+}
+
+footer .container2 .box:nth-child(6) li:first-child::before{
+    content: " ";
+    background: url(../img/phone\ icon.svg) no-repeat;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    left: -20px;
+    top: 6px;
+}
+
+footer .box:first-child a:hover {
+    opacity: 0.7;
+}
+
+footer .box:first-child a:active {
+    opacity: 0.5;
+}
+
+footer .box:last-child ul li a:hover{
+    color: #FFBD54;
+}
+
+footer .box:last-child ul li a:active{
+    color: black;
+    opacity: 0.7;
+}
